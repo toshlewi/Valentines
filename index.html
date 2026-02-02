@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will You Be My Valentine?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-ornaments" aria-hidden="true">
+    <div class="petal p1"></div>
+    <div class="petal p2"></div>
+    <div class="petal p3"></div>
+    <div class="petal p4"></div>
+    <div class="petal p5"></div>
+    <div class="petal p6"></div>
+    <div class="heart h1"></div>
+    <div class="heart h2"></div>
+    <div class="heart h3"></div>
+    <div class="heart h4"></div>
+  </div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__glass">
+        <p class="hero__kicker">It’s almost</p>
+        <h1 class="hero__title">Valentine’s Day</h1>
+        <p class="hero__subtitle">
+          I made you something small… but full of love.
+        </p>
+
+        <div class="hero__stats">
+          <div class="chip">Love: <span>∞</span></div>
+          <div class="chip">Hugs: <span>unlimited</span></div>
+          <div class="chip">Smiles: <span>guaranteed</span></div>
+        </div>
+      </div>
+
+      <div class="hero__hint">
+        <span class="mouse"></span>
+        <span>Scroll down</span>
+      </div>
+    </section>
+
+    <section class="question" id="question" aria-live="polite">
+      <div class="card">
+        <div class="card__left">
+          <div class="photoWrap">
+            <img src="images/loading.jpeg" alt="A cute photo" class="photo" />
+            <div class="photoGlow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="card__right">
+          <p class="small">Official Valentine Proposal</p>
+          <h2 class="loveTitle">Will you be my Valentine?</h2>
+          <p class="lead">Please choose wisely. (My heart is watching.)</p>
+
+          <div class="choices" id="choices">
+            <button class="btn btn--yes" id="yesBtn">Yes</button>
+            <button class="btn btn--no" id="noBtn">No</button>
+          </div>
+
+          <p class="tiny" id="tinyMsg">Tip: Try clicking <strong>No</strong>… if you can.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="celebration" id="celebration" hidden>
+      <div class="celebration__top">
+        <div class="celebration__badge">SHE SAID YES</div>
+        <h2 class="celebration__title">Happy Valentine’s Day, my love</h2>
+        <p class="celebration__subtitle">Today and always — you’re my favorite person.</p>
+      </div>
+
+      <div class="floaties" id="floaties" aria-hidden="true"></div>
+
+      <section class="poem" id="poem" aria-label="Valentine poem">
+        <div class="poem__card">
+          <div class="poem__kicker">Here is a poem for you 🌸✨🌹</div>
+          <h3 class="poem__title">Valentine’s Day — From Daktari</h3>
+          <div class="poem__grid">
+            <div class="poemBox poemBox--left">
+              <div class="poem__body">
+                <p><strong>Nyawira</strong>,<br>
+                the best human I have ever met—<br>
+                I say that like a diagnosis I’m sure of,<br>
+                no second opinions needed.</p>
+
+                <p>If hearts had charts,<br>
+                yours would show steady rhythms,<br>
+                clean signals,<br>
+                and a kindness that never glitches.</p>
+
+                <p>I see you the way a Daktari sees a patient—<br>
+                with care, with focus,<br>
+                with a promise to never look away<br>
+                when something truly matters.</p>
+
+                <p>You are the calm in the monitoring room,<br>
+                the soft beep that says <em>everything is okay</em>,<br>
+                the update that makes the whole system run better.</p>
+              </div>
+            </div>
+
+            <div class="poemLink" aria-hidden="true">❤️</div>
+
+            <div class="poemBox poemBox--right">
+              <div class="poem__body">
+                <p>In a world of broken code and tired bodies,<br>
+                you are the fix that doesn’t rush,<br>
+                the patch that understands the problem<br>
+                before it even needs explaining.</p>
+
+                <p>If I could scan the future,
+                I’d still choose you—<br>
+                Nyawira,<br>
+                worth protecting,<br>
+                worth caring for,
+                worth showing up for again and again.</p>
+
+                <p>This Valentine’s Day,<br>
+                know this clearly:<br>
+                Daktari cares—deeply, steadily, truly.<br>
+                And you are loved,<br>
+                in every sense of the word. ❤️</p>
+              </div>
+
+              <div class="roseFill" aria-hidden="true">
+                <div class="roseFill__inner">🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹 🌹</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="celebration__media">
+        <video class="dance" id="danceVideo" src="images/dancing.mp4" playsinline muted loop autoplay></video>
+        <button class="btn btn--primary" id="playBtn">Play</button>
+      </div>
+
+      <div class="spark" aria-hidden="true">
+        <div class="firework f1"></div>
+        <div class="firework f2"></div>
+        <div class="firework f3"></div>
+        <div class="firework f4"></div>
+        <div class="firework f5"></div>
+      </div>
+
+      <div class="gallery" aria-label="Celebration gallery">
+        <div class="gallery__track" id="galleryTrack">
+          <img src="images/cool.jpeg" alt="Memory 1" />
+          <img src="images/dancing.jpeg" alt="Memory 2" />
+          <img src="images/last.jpeg" alt="Memory 3" />
+          <img src="images/cool.jpeg" alt="Memory 1" />
+          <img src="images/dancing.jpeg" alt="Memory 2" />
+          <img src="images/last.jpeg" alt="Memory 3" />
+        </div>
+      </div>
+
+      <div class="celebration__footer">
+        <a class="btn btn--ghost" href="#top" id="backToTop">Back to top</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="burst" id="burst" hidden aria-hidden="true">
+    <div class="spark burst__spark">
+      <div class="firework f1"></div>
+      <div class="firework f2"></div>
+      <div class="firework f3"></div>
+      <div class="firework f4"></div>
+      <div class="firework f5"></div>
+    </div>
+    <div class="confetti" aria-hidden="true">
+      <span class="c c1"></span><span class="c c2"></span><span class="c c3"></span><span class="c c4"></span><span class="c c5"></span>
+      <span class="c c6"></span><span class="c c7"></span><span class="c c8"></span><span class="c c9"></span><span class="c c10"></span>
+      <span class="c c11"></span><span class="c c12"></span><span class="c c13"></span><span class="c c14"></span><span class="c c15"></span>
+      <span class="c c16"></span><span class="c c17"></span><span class="c c18"></span><span class="c c19"></span><span class="c c20"></span>
+    </div>
+  </div>
+
+  <div class="roses" id="roses" hidden aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
